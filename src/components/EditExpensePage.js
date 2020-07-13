@@ -16,7 +16,7 @@ onSubmit=(expense)=>{
 }
 
 onRemove=()=>{
-    this.props.removeExpense({id:this.props.editExpenseProp.id})
+    this.props.removeExpense({id:this.props.expense.id})
         this.props.history.push('/'); 
 }
 
