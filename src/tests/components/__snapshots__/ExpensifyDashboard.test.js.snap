@@ -3,6 +3,7 @@
 exports[`should render expensify dashboard component correctly 1`] = `
 <div>
   <Connect(ExpenseListFilter) />
+  <Connect(ExpensesSummary) />
   <Connect(ExpenseList) />
 </div>
 `;
