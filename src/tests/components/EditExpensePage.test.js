@@ -28,4 +28,4 @@ test('Should handle remove expense',()=>{
     expect (history.push).toHaveBeenLastCalledWith('/');
     expect (removeExpense).toHaveBeenLastCalledWith({id:expenses[2].id});
         
-    })
+    });
