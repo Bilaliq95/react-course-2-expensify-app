@@ -6,8 +6,8 @@ import expenses from '../tests/fixtures/expenses'
 import ExpensesSummary from '../components/ExpensesSummary'
 const ExpensifyDashboard=()=>(
     <div>
-    <ExpenseListFilter/>    
     <ExpensesSummary/>
+    <ExpenseListFilter/>    
      <ExpenseList/>
     </div>
     

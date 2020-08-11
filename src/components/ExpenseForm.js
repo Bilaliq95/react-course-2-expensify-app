@@ -93,9 +93,9 @@ state=this.extractProps();
 render(){
     return(
        
-        <div>
        
-        <form onSubmit={(e)=>{
+       
+        <form className="form" onSubmit={(e)=>{
             e.preventDefault();
           if(!this.state.description || !this.state.amount)
           {
@@ -124,16 +124,18 @@ render(){
             }
           }
         }}>
-        <p>{this.state.error}</p>
+        <p className="form__error">{this.state.error}</p>
         <input
         type='text'
         placeholder='Description'
         autoFocus
+        className="text-input"
         value={this.state.description}
         onChange={this.onDescriptionChange }>
         </input>
         <input
         type='text'
+        className="text-input"
         placeholder='Amount'
         value={this.state.amount}
         onChange={this.onAmountChange}
@@ -149,12 +151,14 @@ render(){
         />
         <textarea placeholder='Add a note for your expense(optional)'
         value={this.state.note}
+        className="textarea"
         onChange={this.onNoteChange }>
         </textarea>
-        
-        <button >Add Expense</button>
-        </form>
+        <div>
+        <button className="button" >Save Expense</button>
         </div>
+        </form>
+        
 
     )
 }
